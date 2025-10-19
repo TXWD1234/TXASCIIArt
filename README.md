@@ -47,7 +47,9 @@ You can test it out by your self, or use the parameter below:
 | 5px       | 376   | 118    |
 | 7px       | 268   | 84     |
 
-*The npx means the size of the character. Usually we use 1px as it can show the highest quality*
+*The npx means the size of the character. Usually we use 1px as it can show the highest quality.*
+
+*But also to keep in mind: the smaller the character, the higher the performance requirements of the device. So if ASCIIPlayer is crashing or frame rate is low, try switching to a larger font size.*
 
 ### Character Set
 The characters used to form the graphics.
