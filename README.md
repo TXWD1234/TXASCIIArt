@@ -5,7 +5,7 @@ This project is targeted to render pictures and videos in ASCII characters, and 
 
 **Development time:** Sept.13.2025 ~ Oct.17.2025.
 
-**Dependentcies:** 
+**Dependencies:** 
 - Windows API (<windows.h>)
 - miniaudio (https://miniaud.io/)
 - Qt (https://www.qt.io/)
