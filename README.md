@@ -20,6 +20,8 @@ TXASCIIArt consists of three independent programs working together:
 - ASCIIPlayer - read the .txaa file and display the content in Windows Termianl (cmd / Windows Console) as ASCII animations
 - GammaCorrecter - create and correct the character set used in ASCIIRenderer
 
+***The executables can be found directly in the `release` directory.*** 
+
 # ASCII Renderer
 Render pictures into .txaa files, which are the file to store the data of pictures.
 
