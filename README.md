@@ -10,7 +10,7 @@ This project is targeted to render pictures and videos in ASCII characters, and 
 - miniaudio (https://miniaud.io/)
 - Qt (https://www.qt.io/)
   
-**Environment:** Win11
+**Environment:** Win10 / Win11 in Windows Terminal *(conhost.exe might not work)*
 
 *This project is written with C++.*
 
