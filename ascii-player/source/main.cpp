@@ -26,7 +26,7 @@ enum TimerFlag {
 };
 class Timer {
 public:
-	Timer(string in_name = "No_Name", TimerFlag in_properties = AutoLog) : name(in_name), properties(in_properties), start(std::chrono::steady_clock::now()) {}
+	Timer(string in_name = "No_Name", int in_properties = AutoLog) : name(in_name), properties(in_properties), start(std::chrono::steady_clock::now()) {}
 	~Timer() {
 		if (this->properties & AutoLog) {
 			auto end = std::chrono::steady_clock::now();
@@ -170,8 +170,8 @@ public:
 		std::chrono::steady_clock::time_point updateTimePoint = std::chrono::steady_clock::now() + std::chrono::milliseconds(50);
 		while (frameAmount--) {
 			//cin.get()
-			Timer timerf("Frame");
-			if (frameAmount < 0) return;
+			Timer timerf("Frame", NoEndLog);
+			if (frameAmount < 0) break;
 
 			this->displayFrame(videoBuffer.data(), this->wh, this->hConsole);
 			this->readFrame(videoBuffer.data());
@@ -214,7 +214,7 @@ private:
 	vector<char> soundBuffer;
 
 	void readFrame(CHAR_INFO* bufferptr) {
-		Timer timer("ReadFrame");
+		//Timer timer("ReadFrame");
 		uint32_t frameDataLen;
 		this->ifs.read(reinterpret_cast<char*>(&frameDataLen), 4);
 		auto pos = this->ifs.tellg();
@@ -247,7 +247,7 @@ private:
 	void displayFrame(CHAR_INFO* buffer, uint32_t wh[2], HANDLE hConsole) {
 		//SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
 
-		Timer timer("DisplayFrame");
+		//Timer timer("DisplayFrame");
 		this->inProcessDisplaying = 1;
 		// WriteConsoleOutput
 		//vector<CHAR_INFO> buffertemp(buffer.size());
