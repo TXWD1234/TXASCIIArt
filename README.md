@@ -14,6 +14,8 @@ This project is targeted to render pictures and videos in ASCII characters, and 
 
 *This project is written with C++.*
 
+<img width="1916" height="1079" alt="屏幕截图 2025-11-13 223635" src="https://github.com/user-attachments/assets/bdbde7b4-cb92-4a28-b22d-34d7342b9323" />
+
 # Program Structure:
 TXASCIIArt consists of three independent programs working together:
 - ASCIIRenderer - render pictures or frame sequences into .txaa data files
@@ -23,6 +25,9 @@ TXASCIIArt consists of three independent programs working together:
 ***The executables can be found directly in the `release` directory.*** 
 
 # ASCII Renderer
+
+<img width="402" height="313" alt="屏幕截图 2025-11-13 223708" src="https://github.com/user-attachments/assets/9ad7041c-6ee8-4389-8dc0-9afaf721c674" />
+
 Render pictures into .txaa files, which are the file to store the data of pictures.
 
 You can make your own ASCII pictures and videos with this.
@@ -75,6 +80,9 @@ Basicly this option will double the length of the character set by an algorithm 
 Then why not check this option everytime?
 
 # ASCII Player
+
+<img width="1453" height="1075" alt="屏幕截图 2025-11-12 215944" src="https://github.com/user-attachments/assets/4f9809a0-e173-4e68-9007-6986e6f00250" />
+
 Plays the data in .txaa files, and display ASCII images on Windows Terminal.
 
 **This program require the battary option to be set to `high performance` mode, and in full screen and 1px font size to preform the best.**
